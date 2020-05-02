@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JS Project 7</title>
+	<script src="JS/Basic_JavaScript_7.js"></script>
+</head>
+<body>
+<!-- Aassignment pg. 130  
+	<p id="scope"></P>		  -->
+
+	<p>Write a global variable</p>
+	<script>
+		var x = 10;
+		function globalFunction_1() {
+			document.write (20 + x + "<br>");
+		}
+		function globalFunction_2() {
+			document.write (x + 100);
+		}
+		globalFunction_1();
+		globalFunction_2();
+	</script>
+
+	<p>Write a local variable.</P>
+	<script>
+		function localFunction_1() {
+			var y = 10;
+			document.write (20 + y + "<br>");
+		}
+		function localFunction_2() {
+			document.write (y + 100);
+		}
+		localFunction_1();
+		localFunction_2();
+	</script>
+	<p>Debug a function using console.log() method.</p>
+	<script>
+		function localFunctionErr_2() {
+			console.log("value should be 110--" + (y + 100));
+		}
+		localFunctionErr_2();
+	</script>
+	
+</body>
+</html> 
