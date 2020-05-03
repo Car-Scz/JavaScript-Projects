@@ -1,15 +1,57 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Project 9</title>
+<link rel="stylesheet" type="text/css" href="CSS/Basic_CSS_1.css">
 </head>
 
 <body>
-<!--  text		-->
-<h3>heading</h3>
-<button onclick="myFunction()">Go!</button>
-<p id="myExecution"></p>
+<!--  Assignment pg 153		
+<p>How many seconds would you like to set your alarm for?</P>
+<input id="seconds" value="" />
+<button onclick="countdown()">Click here</button>
+<p id="timer"></p>		-->
 
-<script src+"JS/Basic_JavaScript_9.js"></script>
+<!--  Assignment pg 155 - The Slideshow		-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Mountain canyons</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Clear mountain lake</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img_lights_wide.jpg" style="width:100%">
+  <div class="text">Aurora borealis lights</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Along mountain roads</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+<script src="JS/Basic_JavaScript_9.js"></script>
 </body>
 </html> 
