@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Canvas: Drawing a Gradient</title> 
+</head>
+
+<body>
+<div id="content">
+	<canvas id="grdCanvas" width="350" height="200" style="border:5px solid black;">Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script>
+	// Get the canvas element using the DOM
+	var elem = document.getElementById("grdCanvas");
+	// Make sure we don't execute when canvas isn't supported
+	if (elem.getContext) {
+	// use getContext to use the canvas for drawing
+		var ctx = elem.getContext("2d");
+	// Draw a linear gradient within the canvas 
+		var grd = ctx.createLinearGradient(0, 0, 350, 0);
+		grd.addColorStop(0, "black");
+		grd.addColorStop("0.3", "magenta");
+		grd.addColorStop("0.5", "#3399ff");
+		grd.addColorStop("0.7", "#66ff33");
+		grd.addColorStop("0.9", "yellow");
+		grd.addColorStop(1, "red");
+		 
+		ctx.fillStyle = grd;
+		ctx.fillRect(0, 0, 350, 200);
+	} else {
+		alert('Your browser does not support the HTML5 canvas tag.');
+		}
+	</script>
+</div>
+
+<button onclick="">
+
+
+</body>
+</html>
