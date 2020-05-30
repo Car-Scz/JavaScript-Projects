@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge pg 295</title>
+  </head>
+	<body onclick="myFunction()">
+<!--   The activeElement property returns the currently focused element in the document.-->
+		<h2>Display the active Element</h2)
+		<p>Click anywhere on the page.</p>
+		<input type="text" value="Using the <input> element"><br><br>
+		<button>Button element</button>
+		<p id="paragraph"></p>
+
+		<script>
+		function myFunction() {
+		  var x = document.activeElement.tagName;
+		  document.getElementById("paragraph").innerHTML = x;
+		}
+		</script>
+	</body>
+</html>

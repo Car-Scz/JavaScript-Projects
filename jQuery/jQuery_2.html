@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Challenge pg 299</title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		margin: 2rem;
+	}
+	p, span {
+		margin: 1rem 0;
+		font-size: 1rem;
+		}
+	#key-output {
+		width: 100px;
+		padding: .5rem;
+		border: 1px solid black;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	i = 0;
+	$(document).ready(function(){
+	  $("input").keypress(function(){
+		$("span").text(i += 1);
+	  });
+	  $("input").keypress(function(e) {
+		$('#key-output').text(e.which);
+				});
+	});
+// Instantaneously toggle the display of all paragraphs
+	$(document).ready(function(){
+		$(".btnH").click(function(){
+			$("p").hide();
+			$("div").hide();
+			$(".btnH").hide();
+			$(".btnS").show();
+		});
+		$(".btnS").click(function(){
+			$("p").show();
+			$("div").show();
+			$(".btnH").show();
+			$(".btnS").hide();
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>Getting data about the event</h1><br><br>
+	<h3>Enter your name:</h3>
+	<input type="text">
+	<p>Keypress counter: <span>0</span></p>
+	<p>Code of key pressed: </p>
+	<div id="key-output"></div><br><br>
+	<button class="btnH">Hide</button>
+	<button class="btnS">Show</button>
+</body>
+</html>
