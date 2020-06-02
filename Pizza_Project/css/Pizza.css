@@ -1,18 +1,37 @@
+* {
+box-sizing: border-box;
+}
 body {
-	background-color: darkblue;
+	background-color: #e2b603;
+  margin: 0;
+}
+/* Style the header */
+.header {
+	height: 200px;
+	width: 100%;
+	border: 8px solid #00b377;
+	background-color: #c0c942;
+	background-image: url("../images/Pizza_circle.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+  background-size: cover;
 }
 h1 {
-	font-family: Helvetica;
-	color: white;
+	font-family: "Sofia";
+	font-size: 60px;
+	font-style: italic;
+	font-weight: bold;
+	color: #66ffcc;
 	text-align: center;
+	margin-top: 40px;
 }
 h3 {
 	font-family: Arial;
-	color: snow;
+	color: darkblue;
 }
 div {
 	color: lightyellow;
-    font-family: Monospace;
+  font-family: Monospace;
 }
 #menuBG {
 	width: 400px;
@@ -57,6 +76,7 @@ div {
 	height: 200px;
 }
 #btnOrder {
+	background-color: #66ffcc;;
 	margin: 10px 0px 0px 100px;
 	width: 100px;
 	height: 40px;
